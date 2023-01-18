@@ -4,7 +4,10 @@ public class BinarySearch
 {
     public static int find(int[] array, int element)
     {
-        int l = 0, r = array.length;
+        int l = 0, r = array.length - 1;
+        if (r == 0)
+            return -1;
+
         while (l <= r)
         {
             int mid = l + (r - l) / 2;
